@@ -7,6 +7,9 @@ const { findOne, findAll } = require('../../models/Product');
 // get all products
 router.get('/', (req, res) => {
   //.findAll ?
+  Product.findAll({
+    attributes: [],
+  });
   // find all products
   // be sure to include its associated Category and Tag data
 });
@@ -20,7 +23,6 @@ router.get('/:id', (req, res) => {
 
 // create new product
 router.post('/', (req, res) => {
- 
   /* req.body should look like this...
     {
       product_name: "Basketball",
