@@ -1,10 +1,10 @@
 const { Model, DataTypes } = require('sequelize');
 
-const sequelize = require('../config/connection.js');
+const sequelize = require('../../config/connection.js');
 
-class Category extends Model {}
+class Tag extends Model {}
 
-// Category
+// Tag
 
 // id
 
@@ -16,16 +16,17 @@ class Category extends Model {}
 
 // Uses auto increment
 
-// category_name
+// tag_name
 
 // String
 
-// Doesn't allow null values
 
 
 
 
-Category.init(
+
+
+Tag.init(
   {
     // define columns
   },
@@ -34,8 +35,8 @@ Category.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'category',
+    modelName: 'tag',
   }
 );
 
-module.exports = Category;
+module.exports = Tag;

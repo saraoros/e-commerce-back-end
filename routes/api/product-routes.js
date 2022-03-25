@@ -1,22 +1,26 @@
 const router = require('express').Router();
 const { Product, Category, Tag, ProductTag } = require('../../models');
+const { findOne, findAll } = require('../../models/Product');
 
 // The `/api/products` endpoint
 
 // get all products
 router.get('/', (req, res) => {
+  //.findAll ?
   // find all products
   // be sure to include its associated Category and Tag data
 });
 
 // get one product
 router.get('/:id', (req, res) => {
+  //.findOne() ?
   // find a single product by its `id`
   // be sure to include its associated Category and Tag data
 });
 
 // create new product
 router.post('/', (req, res) => {
+ 
   /* req.body should look like this...
     {
       product_name: "Basketball",
@@ -90,6 +94,7 @@ router.put('/:id', (req, res) => {
 });
 
 router.delete('/:id', (req, res) => {
+  //.destory
   // delete one product by its `id` value
 });
 
