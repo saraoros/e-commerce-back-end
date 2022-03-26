@@ -4,9 +4,15 @@ const { findOne, findAll } = require('../../models');
 
 // The `/api/products` endpoint
 // get all products
+
+// should I add category_id to attributes?
+
 router.get('/', (req, res) => {
   Product.findAll({
-    attributes: ['id', 'product_name', 'price', 'stock'],
+
+    // should I put attributes inside include array?
+
+    attributes: ['id', 'product_name', 'price', 'stock', 'category_id'],
     include: [
       {
         model: Category,
@@ -93,6 +99,9 @@ router.post('/', (req, res) => {
 });
 
 // update product
+
+// should I do anything in this route??
+
 router.put('/:id', (req, res) => {
   // update product data
   Product.update(req.body, {
