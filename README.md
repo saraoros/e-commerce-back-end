@@ -19,6 +19,14 @@
 
 # Live Demo
 
+[Live Video Demonstration Here!](https://drive.google.com/file/d/1VJkTVjC_RiMmv0Q3zjB9IScVDN-_yZVV/view)
+
+<img src="./images/getallProducts.png" />
+
+<br />
+
+<img src="./images/getbyID.png" />
+
 # Installation
 
 1. In the terminal command line, run `npm install` to download all dependencies needed ( Express.js, mySql2, and Sequelize)
